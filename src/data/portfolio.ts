@@ -54,7 +54,7 @@ const portfolioContent = {
 			},
 			{
 				title: 'Outils',
-				items: ['VS Code', 'IntelliJ', 'Audacity', 'Sony Vegas Pro'],
+				items: ['VS Code', 'IntelliJ', 'Audacity', 'Sony Vegas Pro', 'Jira', 'Notion'],
 			},
 		],
 		experiences: [
@@ -118,8 +118,8 @@ const portfolioContent = {
 				categoryLabel: 'Dernier projet',
 				year: 'ESGI - 2026',
 				description: [
-					'Site de location de domaines et d’équipements pour pros et particuliers.',
-					'Projet annuel ESGI livré en 4 mois. Travail en équipe de 3 personnes.',
+					'Site de location de domaines et d’équipements pour professionnels et particuliers.',
+					'Projet annuel ESGI livré en 4 mois. Travail en équipe de 3 personnes avec gestion de projet sur Notion.',
 				],
 				stack: ['Vue.js', 'NestJS', 'Docker', 'MinIO', 'CI/CD', 'VPS'],
 				impact: 'Déploiement sécurisé et documentation complète',
@@ -137,7 +137,7 @@ const portfolioContent = {
 				stack: ['Moodle', 'Analyse de thèses', 'Création de vidéos'],
 				impact: '',
 				linkLabel: 'Voir le cours',
-				linkHref: 'https://shareo.zastial.com/',
+				linkHref: 'https://moodle.zastial.com/',
 				tags: ['education'],
 			},
 			{
@@ -244,7 +244,7 @@ const portfolioContent = {
 			},
 			{
 				title: 'Tools',
-				items: ['VS Code', 'IntelliJ', 'Audacity', 'Sony Vegas Pro'],
+				items: ['VS Code', 'IntelliJ', 'Audacity', 'Sony Vegas Pro','Jira', 'Notion'],
 			},
 		],
 		experiences: [
@@ -327,9 +327,23 @@ const portfolioContent = {
 				stack: ['Moodle', 'Research papers analysis', 'Video production'],
 				impact: '',
 				linkLabel: 'Visit course',
-				linkHref: 'https://shareo.zastial.com/',
+				linkHref: 'https://moodle.zastial.com/',
 				tags: ['education'],
 			},
+			{
+				name: 'CI/CD Infrastructure and Containerized Deployment',
+				categoryLabel: 'DevOps Project',
+				year: 'In progress',
+				description: [
+					'Configuration of my Oracle VM with Apache setup and access security (HTTPS, firewall, etc.).',
+					'CI/CD pipeline implementation and automated deployment via Docker.'
+				],
+				stack: ['Oracle VM', 'Docker', 'CI/CD', 'Linux', 'Git'],
+				impact: 'Learning in progress: Terraform and Kubernetes.',
+				linkLabel: '',
+				linkHref: '',
+				tags: ['devops', 'docker', 'ci-cd', 'infrastructure']
+			}
 		],
 		ui: {
 			siteTitle: 'Portfolio of CAROL Alexandre',
