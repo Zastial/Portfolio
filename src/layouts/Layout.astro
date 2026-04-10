@@ -1,9 +1,11 @@
 ---
+import { getLangFromUrl } from '../i18n/utils';
+
 const {
-	title = 'Portfolio | Astro',
-	description = 'Portfolio moderne, interactif et fluide construit avec Astro.',
+	title = 'Portfolio',
+	description = 'Professional portfolio',
 } = Astro.props;
-const pageLocale = Astro.currentLocale ?? 'fr';
+const pageLocale = getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>

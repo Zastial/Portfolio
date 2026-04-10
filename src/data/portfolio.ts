@@ -115,11 +115,11 @@ const portfolioContent = {
 		projects: [
 			{
 				name: 'SHAREO - Location de domaines et d’équipements',
-				categoryLabel: 'Projet phare',
+				categoryLabel: 'Dernier projet',
 				year: 'ESGI - 2026',
 				description: [
 					'Site de location de domaines et d’équipements pour pros et particuliers.',
-					'Projet annuel ESGI livré en 4 mois.',
+					'Projet annuel ESGI livré en 4 mois. Travail en équipe de 3 personnes.',
 				],
 				stack: ['Vue.js', 'NestJS', 'Docker', 'MinIO', 'CI/CD', 'VPS'],
 				impact: 'Déploiement sécurisé et documentation complète',
@@ -140,6 +140,18 @@ const portfolioContent = {
 				linkHref: 'https://shareo.zastial.com/',
 				tags: ['education'],
 			},
+			{
+				"name": "Mise en place d'une infrastructure CI/CD et déploiement conteneurisé",
+				"categoryLabel": "Projet DevOps",
+				"year": "En cours",
+				"description": [
+					"Paramétrage de ma VM Oracle avec configuration Apache et sécurisation des accès (HTTPS, pare-feu, ...).",
+					"Mise en place de pipelines CI/CD et déploiement automatisé via Docker."
+				],
+				"stack": ["Oracle VM", "Docker", "CI/CD", "Linux", "Git"],
+				"impact": "En cours d'apprentissage : Terraform et Kubernetes.",
+				"tags": ["devops", "docker", "ci-cd", "infrastructure"]
+			}
 		],
 		ui: {
 			siteTitle: 'Portfolio de CAROL Alexandre',

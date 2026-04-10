@@ -1,0 +1,47 @@
+---
+import { getLangFromUrl, useTranslatedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+const otherLang = lang === 'fr' ? 'en' : 'fr';
+const otherLangLabel = otherLang.toUpperCase();
+---
+
+<a href={translatePath('/', otherLang)} class="lang-toggle" title={`Switch to ${otherLangLabel}`}>
+	{otherLangLabel}
+</a>
+
+<style>
+	.lang-toggle {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		padding: 0;
+		width: 46px;
+		height: 46px;
+		border-radius: 999px;
+		border: 1px solid var(--border);
+		background: var(--surface);
+		color: var(--text);
+		cursor: pointer;
+		box-shadow: var(--shadow);
+		font-weight: 800;
+		font-size: 0.75rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		transition:
+			background-color 320ms ease,
+			color 320ms ease,
+			border-color 320ms ease,
+			box-shadow 320ms ease,
+			transform 220ms ease;
+	}
+
+	.lang-toggle:hover,
+	.lang-toggle:focus-visible {
+		transform: translateY(-1px);
+		border-color: var(--border-strong);
+		background: var(--surface-strong);
+	}
+</style>
