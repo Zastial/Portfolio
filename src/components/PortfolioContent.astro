@@ -13,7 +13,7 @@ export interface Props {
 const { lang } = Astro.props;
 const t = useTranslations(lang);
 const content = getPortfolioContent(lang);
-const resumeHref = '/resume-alexandre-carol-eng.pdf';
+const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_AlexandreCAROL.pdf';
 ---
 
 <main class="portfolio-page">
