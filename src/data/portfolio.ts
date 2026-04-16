@@ -97,7 +97,7 @@ const portfolioContent = {
 			{
 				title: 'Cambridge English Certificate',
 				meta: '2021',
-				description: 'Niveau B1+ avec anglais professionnel à l’écrit et à l’oral.',
+				description: 'Niveau B1+ avec anglais professionnel à l\'écrit et à l\'oral.',
 			},
 			{
 				title: 'Lycée la Colinière - BAC Mention Assez Bien',
@@ -114,11 +114,11 @@ const portfolioContent = {
 		],
 		projects: [
 			{
-				name: 'SHAREO - Location de domaines et d’équipements',
+				name: 'SHAREO - Location de domaines et d\'équipements',
 				categoryLabel: 'Dernier projet',
 				year: 'ESGI - 2026',
 				description: [
-					'Site de location de domaines et d’équipements pour professionnels et particuliers.',
+					'Site de location de domaines et d\'équipements pour professionnels et particuliers.',
 					'Projet annuel ESGI livré en 4 mois. Travail en équipe de 3 personnes avec gestion de projet sur Notion.',
 				],
 				stack: ['Vue.js', 'NestJS', 'Docker', 'MinIO', 'CI/CD', 'VPS'],
@@ -149,9 +149,23 @@ const portfolioContent = {
 					"Mise en place de pipelines CI/CD et déploiement automatisé via Docker."
 				],
 				"stack": ["Oracle VM", "Docker", "CI/CD", "Linux", "Git"],
-				"impact": "En cours d'apprentissage : Terraform et Kubernetes.",
+				"impact": "",
 				"tags": ["devops", "docker", "ci-cd", "infrastructure"]
-			}
+			},
+			{
+				name: 'Portfolio personnel - Ce site',
+				categoryLabel: 'Portfolio',
+				year: '2026',
+				description: [
+					'Découverte du framework Astro, création d\'un site one-page bilingue (français / anglais) optimisé pour la performance.',
+					'Astro permet de générer un site ultra-léger avec très peu de JavaScript, ce qui garantit rapidité, performance et optimisation du SEO.'
+				],
+				stack: ['Vue.js', 'NestJS', 'Docker', 'MinIO', 'CI/CD', 'VPS'],
+				impact: 'Ma vitrine professionnelle en ligne',
+				linkLabel: 'Voir le code source',
+				linkHref: 'https://github.com/Zastial/Portfolio',
+				tags: ['fullstack', 'devops'],
+			},
 		],
 		ui: {
 			siteTitle: 'Portfolio de CAROL Alexandre',
