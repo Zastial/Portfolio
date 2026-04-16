@@ -484,6 +484,17 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 </script>
 
 <style>
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
 	.portfolio-page {
 		width: min(1160px, calc(100% - 32px));
 		margin: 0 auto;
@@ -540,6 +551,7 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 		flex-direction: column;
 		justify-content: center;
         margin-top: 2rem;
+		animation: fadeInUp 600ms ease-out 0.1s both;
 	}
 
 	.topbar {
@@ -929,6 +941,7 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 
 	.section {
 		padding: 36px 0 0;
+		animation: fadeInUp 600ms ease-out 0.15s both;
 	}
 
 	.section-heading {
@@ -965,6 +978,19 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 	.timeline-card,
 	.history-item {
 		padding: 20px;
+		animation: fadeInUp 600ms ease-out backwards;
+	}
+
+	.feature-card {
+		animation-delay: 0.2s;
+	}
+
+	.history-item {
+		animation-delay: 0.2s;
+	}
+
+	.timeline-card {
+		animation-delay: 0.2s;
 	}
 
 	.feature-card h3,
@@ -1058,6 +1084,8 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 	.project-card {
 		padding: 24px;
 		min-height: 100%;
+		animation: fadeInUp 600ms ease-out backwards;
+		animation-delay: 0.25s;
 		transition: transform 220ms ease;
 	}
 

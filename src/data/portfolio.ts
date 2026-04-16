@@ -4,14 +4,14 @@ const portfolioContent = {
 	fr: {
 		profile: {
 			name: 'CAROL Alexandre',
-            email: 'alexcrl.pro@gmail.com',
-            links: [
-                {
-                    label: 'LinkedIn',
-                    href: 'https://www.linkedin.com/in/alexandre-carol-fortin-0b7784251/',
-                },
-                { label: 'GitHub', href: 'https://github.com/Zastial' },
-            ],
+			email: 'alexcrl.pro@gmail.com',
+			links: [
+				{
+					label: 'LinkedIn',
+					href: 'https://www.linkedin.com/in/alexandre-carol-fortin-0b7784251/',
+				},
+				{ label: 'GitHub', href: 'https://github.com/Zastial' },
+			],
 			role: 'Ingénieur Logiciel / DevOps',
 			location: 'Nantes, France',
 			availability: 'CDI recherché à partir de mi-octobre.',
@@ -141,16 +141,16 @@ const portfolioContent = {
 				tags: ['education'],
 			},
 			{
-				"name": "Mise en place d'une infrastructure CI/CD et déploiement conteneurisé",
-				"categoryLabel": "Projet DevOps",
-				"year": "En cours",
-				"description": [
+				name: "Mise en place d'une infrastructure CI/CD et déploiement conteneurisé",
+				categoryLabel: "Projet DevOps",
+				year: "En cours",
+				description: [
 					"Paramétrage de ma VM Oracle avec configuration Apache et sécurisation des accès (HTTPS, pare-feu, ...).",
 					"Mise en place de pipelines CI/CD et déploiement automatisé via Docker."
 				],
-				"stack": ["Oracle VM", "Docker", "CI/CD", "Linux", "Git"],
-				"impact": "",
-				"tags": ["devops", "docker", "ci-cd", "infrastructure"]
+				stack: ["Oracle VM", "Docker", "CI/CD", "Linux", "Git"],
+				impact: "",
+				tags: ["devops", "docker", "ci-cd", "infrastructure"]
 			},
 			{
 				name: 'Portfolio personnel - Ce site',
@@ -164,7 +164,7 @@ const portfolioContent = {
 				impact: 'Ma vitrine professionnelle en ligne',
 				linkLabel: 'Voir le code source',
 				linkHref: 'https://github.com/Zastial/Portfolio',
-				tags: ['fullstack', 'devops'],
+				tags: ['fullstack'],
 			},
 		],
 		ui: {
@@ -208,19 +208,19 @@ const portfolioContent = {
 	en: {
 		profile: {
 			name: 'CAROL Alexandre',
-            email: 'alexcrl.pro@gmail.com',
-            links: [
-                {
-                    label: 'LinkedIn',
-                    href: 'https://www.linkedin.com/in/alexandre-carol-fortin-0b7784251/?locale=en-US',
-                },
-                { label: 'GitHub', href: 'https://github.com/Zastial' },
-            ],
+			email: 'alexcrl.pro@gmail.com',
+			links: [
+				{
+					label: 'LinkedIn',
+					href: 'https://www.linkedin.com/in/alexandre-carol-fortin-0b7784251/?locale=en_US',
+				},
+				{ label: 'GitHub', href: 'https://github.com/Zastial' },
+			],
 			role: 'Software Engineer / DevOps',
 			location: 'Nantes, France',
 			availability: 'Looking for a full-time position starting mid-October.',
 			intro:
-				'I want to keep learning and bring value to meaningful products.',
+				'I want to keep learning and bring value to meaningful projects.',
 		},
 		navItems: [
 			{ label: 'Home', href: '#accueil' },
@@ -258,7 +258,7 @@ const portfolioContent = {
 			},
 			{
 				title: 'Tools',
-				items: ['VS Code', 'IntelliJ', 'Audacity', 'Sony Vegas Pro','Jira', 'Notion'],
+				items: ['VS Code', 'IntelliJ', 'Audacity', 'Sony Vegas Pro', 'Jira', 'Notion'],
 			},
 		],
 		experiences: [
@@ -304,7 +304,7 @@ const portfolioContent = {
 				description: 'B1+ level with professional written and spoken English.',
 			},
 			{
-				title: 'La Coliniere High School - Baccalaureate',
+				title: 'La Colinière High School - Baccalaureate',
 				meta: '2018-2021',
 				description: 'NSI and LLCE English specialization.',
 			},
@@ -323,7 +323,7 @@ const portfolioContent = {
 				year: 'ESGI - 2026',
 				description: [
 					'Rental platform for estates and equipment, for professionals and individuals.',
-					'Annual ESGI project delivered in 4 months.',
+					'Annual ESGI project delivered in 4 months. Teamwork with 3 people and project management via Notion.',
 				],
 				stack: ['Vue.js', 'NestJS', 'Docker', 'MinIO', 'CI/CD', 'VPS'],
 				impact: 'Secure deployment and complete documentation',
@@ -332,11 +332,11 @@ const portfolioContent = {
 				tags: ['fullstack', 'devops', 'product'],
 			},
 			{
-				name: 'NFC and RFID - Contactless communication and authentication',
+				name: 'NFC and RFID - Contactless Communication, Data Exchange and Authentication',
 				categoryLabel: 'Online course',
 				year: 'ESGI - 2026',
 				description: [
-					'Online course about NFC and RFID technologies for software development, covering contactless communication, data exchange, and authentication methods.',
+					'Online course on NFC and RFID technologies applied to development, covering contactless communication, data exchange, and authentication methods.',
 				],
 				stack: ['Moodle', 'Research papers analysis', 'Video production'],
 				impact: '',
@@ -345,7 +345,7 @@ const portfolioContent = {
 				tags: ['education'],
 			},
 			{
-				name: 'CI/CD Infrastructure and Containerized Deployment',
+				name: 'CI/CD Infrastructure Setup and Containerized Deployment',
 				categoryLabel: 'DevOps Project',
 				year: 'In progress',
 				description: [
@@ -353,11 +353,23 @@ const portfolioContent = {
 					'CI/CD pipeline implementation and automated deployment via Docker.'
 				],
 				stack: ['Oracle VM', 'Docker', 'CI/CD', 'Linux', 'Git'],
-				impact: 'Learning in progress: Terraform and Kubernetes.',
-				linkLabel: '',
-				linkHref: '',
+				impact: 'Ongoing learning: Terraform and Kubernetes.',
 				tags: ['devops', 'docker', 'ci-cd', 'infrastructure']
-			}
+			},
+			{
+				name: 'Personal Portfolio - This Website',
+				categoryLabel: 'Portfolio',
+				year: '2026',
+				description: [
+					'Discovery of the Astro framework, creation of a bilingual one-page website (French / English) optimized for performance.',
+					'Astro generates an ultra-light website with minimal JavaScript, ensuring speed, performance, and SEO optimization.'
+				],
+				stack: ['Astro', 'Vue.js', 'TypeScript', 'Tailwind CSS'],
+				impact: 'My professional online portfolio',
+				linkLabel: 'View source code',
+				linkHref: 'https://github.com/Zastial/Portfolio',
+				tags: ['fullstack'],
+			},
 		],
 		ui: {
 			siteTitle: 'Portfolio of CAROL Alexandre',
@@ -387,7 +399,7 @@ const portfolioContent = {
 			experienceTitle: 'Real contexts, real deliveries.',
 			experienceLead: 'I had the chance to work on multiple projects and continuously grow my skills.',
 			educationEyebrow: 'Education',
-			educationTitle: 'Strong education, reinforced by hands-on delivery.',
+			educationTitle: 'Strong education, reinforced by hands-on practice.',
 			educationLead: 'Web engineering, real projects, and continuous skill growth.',
 			projectsEyebrow: 'Projects',
 			projectsTitle: 'A few examples of my personal work',
