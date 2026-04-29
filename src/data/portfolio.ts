@@ -137,7 +137,7 @@ const portfolioContent = {
 				stack: ['Moodle', 'Analyse de thèses', 'Création de vidéos'],
 				impact: '',
 				linkLabel: 'Voir le cours',
-				linkHref: 'https://moodle.zastial.com/',
+				linkHref: 'https://moodle.zastial.com/course/view.php?id=6',
 				tags: ['education'],
 			},
 			{
@@ -341,7 +341,7 @@ const portfolioContent = {
 				stack: ['Moodle', 'Research papers analysis', 'Video production'],
 				impact: '',
 				linkLabel: 'Visit course',
-				linkHref: 'https://moodle.zastial.com/',
+				linkHref: 'https://moodle.zastial.com/course/view.php?id=6',
 				tags: ['education'],
 			},
 			{
