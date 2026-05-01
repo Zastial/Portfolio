@@ -111,6 +111,8 @@ const portfolioContent = {
 			{ label: 'DevOps', value: 'devops' },
 			{ label: 'Produit', value: 'product' },
 			{ label: 'Cours', value: 'education' },
+			{ label: 'Backend', value: 'backend' },
+			{ label: 'Automatisation', value: 'automation' },
 		],
 		projects: [
 			{
@@ -150,7 +152,7 @@ const portfolioContent = {
 				],
 				stack: ["Oracle VM", "Docker", "CI/CD", "Linux", "Git"],
 				impact: "",
-				tags: ["devops", "docker", "ci-cd", "infrastructure"]
+				tags: ["devops", "automation"]
 			},
 			{
 				name: 'Portfolio personnel - Ce site',
@@ -166,6 +168,29 @@ const portfolioContent = {
 				linkHref: 'https://github.com/Zastial/Portfolio',
 				tags: ['fullstack'],
 			},
+			{
+				"name": "TradingCorpBot",
+				"categoryLabel": "Bot Discord",
+				"year": "2026",
+				"description": [
+					"Bot Discord de recherche et d'analyse de tickers, connecté à n8n pour déclencher des traitements externes.",
+					"Le projet utilise Redis pour le cache et la gestion des requêtes, avec un déploiement prévu avec Docker Swarm."
+				],
+				"stack": [
+					"Go",
+					"DiscordGo",
+					"Redis",
+					"n8n",
+					"Docker Swarm"
+				],
+				"impact": "Automatiser l'analyse d'actions directement",
+				"linkLabel": "Voir le code source",
+				"linkHref": "https://github.com/Zastial/TradingCorpBot",
+				"tags": [
+					"backend",
+					"automation"
+				]
+			}
 		],
 		ui: {
 			siteTitle: 'Portfolio de CAROL Alexandre',
@@ -315,6 +340,8 @@ const portfolioContent = {
 			{ label: 'DevOps', value: 'devops' },
 			{ label: 'Product', value: 'product' },
 			{ label: 'Courses', value: 'education' },
+			{ label: 'Backend', value: 'backend' },
+			{ label: 'Automation', value: 'automation' },
 		],
 		projects: [
 			{
@@ -370,6 +397,29 @@ const portfolioContent = {
 				linkHref: 'https://github.com/Zastial/Portfolio',
 				tags: ['fullstack'],
 			},
+			{
+				"name": "TradingCorpBot",
+				"categoryLabel": "Bot Discord",
+				"year": "2026",
+				"description": [
+					"A Discord bot for ticker search and analysis, integrated with n8n to trigger external workflows.",
+					"The project uses Redis for caching and request coordination, with Docker Swarm for deployment."
+				],
+				"stack": [
+					"Go",
+					"DiscordGo",
+					"Redis",
+					"n8n",
+					"Docker Swarm"
+				],
+				"impact": "Automate stock analysis directly",
+				"linkLabel": "View source code",
+				"linkHref": "https://github.com/Zastial/TradingCorpBot",
+				"tags": [
+					"backend",
+					"automation"
+				]
+			}
 		],
 		ui: {
 			siteTitle: 'Portfolio of CAROL Alexandre',
