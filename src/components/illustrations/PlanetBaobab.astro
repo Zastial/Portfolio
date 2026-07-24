@@ -1,0 +1,19 @@
+---
+export interface Props {
+	class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<svg class={`illu-planet ${className}`} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+	<ellipse cx="24" cy="30" rx="17" ry="8" fill="var(--illu-fill, transparent)" stroke="currentColor" stroke-width="2"></ellipse>
+	<ellipse cx="24" cy="27" rx="24" ry="4.5" stroke="currentColor" stroke-width="1.2" opacity="0.5"></ellipse>
+	<g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+		<line x1="15" y1="24" x2="15" y2="14"></line>
+		<line x1="30" y1="25" x2="30" y2="17"></line>
+	</g>
+	<g fill="var(--accent-3)" opacity="0.9">
+		<circle cx="15" cy="11" r="4.5"></circle>
+		<circle cx="30" cy="14" r="3.6"></circle>
+	</g>
+</svg>

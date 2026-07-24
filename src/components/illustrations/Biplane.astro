@@ -1,0 +1,16 @@
+---
+export interface Props {
+	class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<svg class={`illu-biplane ${className}`} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+	<path d="M4,30 Q14,26 22,28" stroke="currentColor" stroke-width="1.4" stroke-dasharray="1 4" stroke-linecap="round" opacity="0.6"></path>
+	<line x1="22" y1="18" x2="40" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+	<line x1="18" y1="24" x2="36" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+	<path d="M17,20 L38,14 L34,22 L15,26 Z" fill="var(--illu-fill, transparent)" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+	<line x1="20" y1="21" x2="18" y2="26" stroke="currentColor" stroke-width="1.6"></line>
+	<line x1="30" y1="17" x2="30" y2="24" stroke="currentColor" stroke-width="1.6"></line>
+	<path d="M15,23 L9,20 L11,25 L9,29 L16,27" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="var(--illu-fill, transparent)"></path>
+</svg>

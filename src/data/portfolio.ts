@@ -29,7 +29,7 @@ const portfolioContent = {
 		stats: [
 			{ value: 'Full-stack', label: 'Vue.js / React, Go, Python, Kotlin ...' },
 			{ value: 'DevOps', label: 'Docker, Kubernetes, CI/CD, VPS, ...' },
-			{ value: 'FR / EN', label: 'Anglais professionnel' },
+			{ value: 'FR / EN', label: 'Français natif\nAnglais professionnel' },
 		],
 		skills: [
 			{
@@ -258,7 +258,7 @@ const portfolioContent = {
 		stats: [
 			{ value: 'Full-stack', label: 'Vue.js / React, Go, Python, Kotlin ...' },
 			{ value: 'DevOps', label: 'Docker, Kubernetes, CI/CD, VPS, ...' },
-			{ value: 'FR / EN', label: 'Professional English' },
+			{ value: 'FR / EN', label: 'Professional English\nNative French' },
 		],
 		skills: [
 			{

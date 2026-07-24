@@ -1,0 +1,23 @@
+---
+export interface Props {
+	class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<svg class={`illu-rose ${className}`} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+	<path d="M24,44 C21,32 24,20 24,12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+	<path d="M24,30 C15,28 11,21 14,15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+	<path d="M24,36 C33,34 37,28 34,22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+	<g fill="var(--accent-2)" stroke="currentColor" stroke-width="1.2">
+		<circle cx="27" cy="10" r="7"></circle>
+		<circle cx="19" cy="8" r="6"></circle>
+		<circle cx="24" cy="4" r="6"></circle>
+	</g>
+</svg>
+
+<style>
+	.illu-rose {
+		overflow: visible;
+	}
+</style>

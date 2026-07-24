@@ -5,6 +5,10 @@ import profileImage from '../assets/profile.webp';
 import githubProfileImage from '../assets/github-profile.webp';
 import { useTranslations } from '../i18n/utils';
 import { getPortfolioContent } from '../data/portfolio';
+import Rose from './illustrations/Rose.astro';
+import Biplane from './illustrations/Biplane.astro';
+import Lamp from './illustrations/Lamp.astro';
+import PlanetBaobab from './illustrations/PlanetBaobab.astro';
 
 export interface Props {
 	lang: 'fr' | 'en';
@@ -126,7 +130,7 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 
 	<section class="section" id="competences">
 		<div class="section-heading">
-			<p class="eyebrow">{t('section.skills.eyebrow')}</p>
+			<p class="eyebrow"><span class="eyebrow-icon"><Rose /></span>{t('section.skills.eyebrow')}</p>
 			<h2>{t('section.skills.title')}</h2>
 			<p>{t('section.skills.lead')}</p>
 		</div>
@@ -147,7 +151,7 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 
 	<section class="section" id="experience">
 		<div class="section-heading">
-			<p class="eyebrow">{t('section.experience.eyebrow')}</p>
+			<p class="eyebrow"><span class="eyebrow-icon"><Biplane /></span>{t('section.experience.eyebrow')}</p>
 			<h2>{t('section.experience.title')}</h2>
 			<p>{t('section.experience.lead')}</p>
 		</div>
@@ -168,7 +172,7 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 	<section class="section split" id="formation">
 		<div>
 			<div class="section-heading">
-				<p class="eyebrow">{t('section.education.eyebrow')}</p>
+				<p class="eyebrow"><span class="eyebrow-icon"><Lamp /></span>{t('section.education.eyebrow')}</p>
 				<h2>{t('section.education.title')}</h2>
 				<p>{t('section.education.lead')}</p>
 			</div>
@@ -188,7 +192,7 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 	<section class="section" id="projets">
 		<div class="section-heading section-heading-inline">
 			<div>
-				<p class="eyebrow">{t('section.projects.eyebrow')}</p>
+				<p class="eyebrow"><span class="eyebrow-icon"><PlanetBaobab /></span>{t('section.projects.eyebrow')}</p>
 				<h2>{t('section.projects.title')}</h2>
 			</div>
 		</div>
@@ -298,7 +302,7 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 			themeToggle.setAttribute('aria-label', theme === 'dark' ? themeToLightLabel : themeToDarkLabel);
 		}
 		if (themeMeta) {
-			themeMeta.setAttribute('content', theme === 'dark' ? '#081120' : '#f5f1ea');
+			themeMeta.setAttribute('content', theme === 'dark' ? '#080b22' : '#f6e6c8');
 		}
 	};
 
@@ -627,11 +631,12 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 		width: 52px;
 		height: 52px;
 		border-radius: 18px;
-		background: linear-gradient(135deg, rgba(120, 228, 255, 0.18), rgba(243, 167, 255, 0.18));
+		background: linear-gradient(135deg, var(--halo-a), var(--halo-b));
 		border: 1px solid var(--border);
 		box-shadow: var(--shadow);
 		font-weight: 800;
 		letter-spacing: 0.08em;
+		object-fit: cover;
 	}
 
 	.nav {
@@ -765,7 +770,7 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 		height: clamp(100px, 17vw, 150px);
 		border-radius: 999px;
 		padding: 3px;
-		background: linear-gradient(135deg, rgba(120, 228, 255, 0.6), rgba(243, 167, 255, 0.6));
+		background: linear-gradient(135deg, var(--accent), var(--accent-2));
 		border: 1px solid var(--border);
 		box-shadow: var(--shadow);
 		flex-shrink: 0;
@@ -814,9 +819,9 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 	}
 
 	.button-primary {
-		background: linear-gradient(135deg, rgba(120, 228, 255, 0.96), rgba(243, 167, 255, 0.94));
+		background: linear-gradient(135deg, var(--accent), var(--accent-2));
 		color: var(--button-primary-text);
-		box-shadow: 0 16px 40px rgba(120, 228, 255, 0.18);
+		box-shadow: 0 16px 40px color-mix(in srgb, var(--accent) 30%, transparent);
 	}
 
 	.button-secondary {
@@ -852,6 +857,7 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 		color: var(--muted);
 		font-size: 0.95rem;
 		line-height: 1.45;
+		white-space: pre-line;
 	}
 
 	.hero-panel {
@@ -867,7 +873,7 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 		width: 180px;
 		height: 180px;
 		border-radius: 50%;
-		background: radial-gradient(circle, rgba(120, 228, 255, 0.22), transparent 70%);
+		background: radial-gradient(circle, var(--halo-a), transparent 70%);
 	}
 
 	.panel-chip {
@@ -1155,12 +1161,27 @@ const resumeHref = lang === 'fr' ? '/CV_AlexandreCAROL.pdf' : '/Resume_Alexandre
 		gap: 24px;
 		padding: 22px;
 		margin-top: 36px;
+		position: relative;
+		overflow: hidden;
 	}
 
 	.contact-actions {
 		display: flex;
 		gap: 12px;
 		justify-content: flex-end;
+	}
+
+	.eyebrow-icon {
+		display: inline-flex;
+		width: 20px;
+		height: 20px;
+		color: var(--accent-3);
+		flex-shrink: 0;
+	}
+
+	.eyebrow-icon :global(svg) {
+		width: 100%;
+		height: 100%;
 	}
 
 	[data-project-card][hidden] {
